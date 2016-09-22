@@ -69,11 +69,13 @@ namespace ThaiApiTesting.TestCases
             response = JsonConvert.DeserializeObject<Response>(Context.LastResponse.BodyString);
             response.radius.ShouldBeEquivalentTo("10000");
             var item_found1 = response.item_found;
+            AddCommentToResult(Context.LastResponse.BodyString);
 
             yield return requests.Get(ThaiUrls.ReverseGeocode(5.668142f, 101.144964f, 1000));
             response = JsonConvert.DeserializeObject<Response>(Context.LastResponse.BodyString);
             response.radius.ShouldBeEquivalentTo("1000");
             var item_found2 = response.item_found;
+            AddCommentToResult(Context.LastResponse.BodyString);
 
             item_found1.Should().BeGreaterThan(item_found2);
         }

@@ -25,5 +25,7 @@ namespace ThaiApiTesting.Models
         public string lng { get; set; }
 
         public string lat { get; set; }
+
+        public string sort_strategy { get; set; }
     }
 }

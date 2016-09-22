@@ -70,8 +70,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestsCore\BaseWebTest.cs" />
     <Compile Include="RequestsCore\Requests.cs" />
+    <Compile Include="TestCases\LanguageChecking.cs" />
     <Compile Include="TestCases\LatAndLngChecking.cs" />
+    <Compile Include="TestCases\LimitChecking.cs" />
+    <Compile Include="TestCases\PaginationChecking.cs" />
     <Compile Include="TestCases\RadiusChecking.cs" />
+    <Compile Include="TestCases\SortChecking.cs" />
     <Compile Include="ThaiUrls.cs" />
     <Compile Include="ValidationRules\DocModelValidator.cs" />
     <Compile Include="ValidationRules\ModelValitionRule.cs" />

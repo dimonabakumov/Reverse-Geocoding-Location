@@ -24,8 +24,6 @@ namespace ThaiApiTesting.ValidationRules
             RuleFor(response => response.parameter_template).NotNull();
 
             RuleFor(response => response.prev_parameter).NotNull();
-
-            //RuleFor(response => response.query).NotNull();
         }
     }
 }

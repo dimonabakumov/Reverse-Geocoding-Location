@@ -1,3 +1,4 @@
 /packages
 /ThaiApiTesting/bin
 /ThaiApiTesting/obj
+!nuget.exe
